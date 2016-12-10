@@ -1,0 +1,109 @@
+<html>
+<head>
+	<title>Guess the melody :)</title>
+<style>
+table {margin: auto; margin-top: 100px;}
+#r {background-color: red;}
+#o {background-color: orange;}
+#y {background-color: yellow;}
+#g {background-color: green;}
+#b {background-color: blue;}
+#d {background-color: darkblue;}
+#v {background-color: violet;}
+</style>
+
+</head>
+<body>
+
+<table>
+	<tr>
+		<th title="red" id="r" style="height:100px; width:60px"> </th>
+		<th title="orange" id="o" style="height:100px; width:60px"> </th>
+		<th title="yellow" id="y" style="height:100px; width:60px"> </th>
+		<th title="green" id="g" style="height:100px; width:60px"> </th>
+		<th title="blue" id="b" style="height:100px; width:60px" > </th>
+		<th title="darkblue" id="d" style="height:100px; width:60px"> </th>
+		<th title="violet" id="v" style="height:100px; width:60px"> </th>
+	</tr>
+  
+	<audio id=red>
+	   <source src="red.mp3" type='audio/mpeg;'>
+	</audio>
+	
+	<audio id=orange>
+	   <source src="orange.mp3" type='audio/mpeg;'>
+	</audio>
+  
+	<audio id=yellow>
+	   <source src="yellow.mp3" type='audio/mpeg;'>
+	</audio>
+	
+	<audio id=green>
+	   <source src="green.mp3" type='audio/mpeg;'>
+	</audio>
+	
+	<audio id=blue>
+	   <source src="blue.mp3" type='audio/mpeg;'>
+	</audio>
+	
+	<audio id=darkblue>
+	   <source src="darkblue.mp3" type='audio/mpeg;'>
+	</audio>
+	
+	<audio id=violet>
+	   <source src="violet.mp3" type='audio/mpeg;'>
+	</audio>
+  
+	<script>
+	document.getElementById('r').onmouseover= function()
+	{document.getElementById('red').play();}
+	document.getElementById('r').onmouseout= function()
+	{document.getElementById('red').pause();}
+	</script>
+	
+	<script>
+	document.getElementById('o').onmouseover= function()
+	{document.getElementById('orange').play();}
+	document.getElementById('o').onmouseout= function()
+	{document.getElementById('orange').pause();}
+	</script>
+	
+	<script>
+	document.getElementById('y').onmouseover= function()
+	{document.getElementById('yellow').play();}
+	document.getElementById('y').onmouseout= function()
+	{document.getElementById('yellow').pause();}
+	</script>
+	
+	<script>
+	document.getElementById('g').onmouseover= function()
+	{document.getElementById('green').play();}
+	document.getElementById('g').onmouseout= function()
+	{document.getElementById('green').pause();}
+	</script>
+	
+	<script>
+	document.getElementById('b').onmouseover= function()
+	{document.getElementById('blue').play();}
+	document.getElementById('b').onmouseout= function()
+	{document.getElementById('blue').pause();}
+	</script>
+	
+	<script>
+	document.getElementById('d').onmouseover= function()
+	{document.getElementById('darkblue').play();}
+	document.getElementById('d').onmouseout= function()
+	{document.getElementById('darkblue').pause();}
+	</script>
+	
+	<script>
+	document.getElementById('v').onmouseover= function()
+	{document.getElementById('violet').play();}
+	document.getElementById('v').onmouseout= function()
+	{document.getElementById('violet').pause();}
+	</script>	
+			
+</table>
+
+</body>
+</html>
